@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/studyhooligen/slam/20202
+CMAKE_SOURCE_DIR = /home/studyhooligen/slam2020/CH6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/studyhooligen/slam/buildFiles
+CMAKE_BINARY_DIR = /home/studyhooligen/slam2020/buildFiles
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/studyhooligen/slam/buildFiles/CMakeFiles /home/studyhooligen/slam/buildFiles/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/studyhooligen/slam2020/buildFiles/CMakeFiles /home/studyhooligen/slam2020/buildFiles/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/studyhooligen/slam/buildFiles/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/studyhooligen/slam2020/buildFiles/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named movieFlip
+# Target rules for targets named g2oFit
 
 # Build rule for target.
-movieFlip: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 movieFlip
-.PHONY : movieFlip
+g2oFit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 g2oFit
+.PHONY : g2oFit
 
 # fast build rule for target.
-movieFlip/fast:
-	$(MAKE) -f CMakeFiles/movieFlip.dir/build.make CMakeFiles/movieFlip.dir/build
-.PHONY : movieFlip/fast
+g2oFit/fast:
+	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/build
+.PHONY : g2oFit/fast
 
-movieFlip.o: movieFlip.cpp.o
+g2oCurveFitting.o: g2oCurveFitting.cpp.o
 
-.PHONY : movieFlip.o
+.PHONY : g2oCurveFitting.o
 
 # target to build an object file
-movieFlip.cpp.o:
-	$(MAKE) -f CMakeFiles/movieFlip.dir/build.make CMakeFiles/movieFlip.dir/movieFlip.cpp.o
-.PHONY : movieFlip.cpp.o
+g2oCurveFitting.cpp.o:
+	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/g2oCurveFitting.cpp.o
+.PHONY : g2oCurveFitting.cpp.o
 
-movieFlip.i: movieFlip.cpp.i
+g2oCurveFitting.i: g2oCurveFitting.cpp.i
 
-.PHONY : movieFlip.i
+.PHONY : g2oCurveFitting.i
 
 # target to preprocess a source file
-movieFlip.cpp.i:
-	$(MAKE) -f CMakeFiles/movieFlip.dir/build.make CMakeFiles/movieFlip.dir/movieFlip.cpp.i
-.PHONY : movieFlip.cpp.i
+g2oCurveFitting.cpp.i:
+	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/g2oCurveFitting.cpp.i
+.PHONY : g2oCurveFitting.cpp.i
 
-movieFlip.s: movieFlip.cpp.s
+g2oCurveFitting.s: g2oCurveFitting.cpp.s
 
-.PHONY : movieFlip.s
+.PHONY : g2oCurveFitting.s
 
 # target to generate assembly for a file
-movieFlip.cpp.s:
-	$(MAKE) -f CMakeFiles/movieFlip.dir/build.make CMakeFiles/movieFlip.dir/movieFlip.cpp.s
-.PHONY : movieFlip.cpp.s
+g2oCurveFitting.cpp.s:
+	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/g2oCurveFitting.cpp.s
+.PHONY : g2oCurveFitting.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... movieFlip"
+	@echo "... g2oFit"
 	@echo "... edit_cache"
-	@echo "... movieFlip.o"
-	@echo "... movieFlip.i"
-	@echo "... movieFlip.s"
+	@echo "... g2oCurveFitting.o"
+	@echo "... g2oCurveFitting.i"
+	@echo "... g2oCurveFitting.s"
 .PHONY : help
 
 
