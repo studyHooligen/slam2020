@@ -1,4 +1,4 @@
-# Install script for directory: /home/studyhooligen/slam2020/CH6
+# Install script for directory: /home/studyhooligen/slam2020/CH7
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

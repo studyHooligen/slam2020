@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/studyhooligen/slam2020/CH6
+CMAKE_SOURCE_DIR = /home/studyhooligen/slam2020/CH7
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/studyhooligen/slam2020/buildFiles
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named g2oFit
+# Target rules for targets named ch7VO
 
 # Build rule for target.
-g2oFit: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 g2oFit
-.PHONY : g2oFit
+ch7VO: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ch7VO
+.PHONY : ch7VO
 
 # fast build rule for target.
-g2oFit/fast:
-	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/build
-.PHONY : g2oFit/fast
+ch7VO/fast:
+	$(MAKE) -f CMakeFiles/ch7VO.dir/build.make CMakeFiles/ch7VO.dir/build
+.PHONY : ch7VO/fast
 
-g2oCurveFitting.o: g2oCurveFitting.cpp.o
+feature_extraction.o: feature_extraction.cpp.o
 
-.PHONY : g2oCurveFitting.o
+.PHONY : feature_extraction.o
 
 # target to build an object file
-g2oCurveFitting.cpp.o:
-	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/g2oCurveFitting.cpp.o
-.PHONY : g2oCurveFitting.cpp.o
+feature_extraction.cpp.o:
+	$(MAKE) -f CMakeFiles/ch7VO.dir/build.make CMakeFiles/ch7VO.dir/feature_extraction.cpp.o
+.PHONY : feature_extraction.cpp.o
 
-g2oCurveFitting.i: g2oCurveFitting.cpp.i
+feature_extraction.i: feature_extraction.cpp.i
 
-.PHONY : g2oCurveFitting.i
+.PHONY : feature_extraction.i
 
 # target to preprocess a source file
-g2oCurveFitting.cpp.i:
-	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/g2oCurveFitting.cpp.i
-.PHONY : g2oCurveFitting.cpp.i
+feature_extraction.cpp.i:
+	$(MAKE) -f CMakeFiles/ch7VO.dir/build.make CMakeFiles/ch7VO.dir/feature_extraction.cpp.i
+.PHONY : feature_extraction.cpp.i
 
-g2oCurveFitting.s: g2oCurveFitting.cpp.s
+feature_extraction.s: feature_extraction.cpp.s
 
-.PHONY : g2oCurveFitting.s
+.PHONY : feature_extraction.s
 
 # target to generate assembly for a file
-g2oCurveFitting.cpp.s:
-	$(MAKE) -f CMakeFiles/g2oFit.dir/build.make CMakeFiles/g2oFit.dir/g2oCurveFitting.cpp.s
-.PHONY : g2oCurveFitting.cpp.s
+feature_extraction.cpp.s:
+	$(MAKE) -f CMakeFiles/ch7VO.dir/build.make CMakeFiles/ch7VO.dir/feature_extraction.cpp.s
+.PHONY : feature_extraction.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... g2oFit"
+	@echo "... ch7VO"
 	@echo "... edit_cache"
-	@echo "... g2oCurveFitting.o"
-	@echo "... g2oCurveFitting.i"
-	@echo "... g2oCurveFitting.s"
+	@echo "... feature_extraction.o"
+	@echo "... feature_extraction.i"
+	@echo "... feature_extraction.s"
 .PHONY : help
 
 

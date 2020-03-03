@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ceresFit
+CMAKE_PROJECT_NAME:STATIC=ch7VO
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -197,13 +197,10 @@ GLOG_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libglog.so
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
 //Value Computed by CMake
-ceresFit_BINARY_DIR:STATIC=/home/studyhooligen/slam2020/buildFiles
+ch7VO_BINARY_DIR:STATIC=/home/studyhooligen/slam2020/buildFiles
 
 //Value Computed by CMake
-ceresFit_SOURCE_DIR:STATIC=/home/studyhooligen/slam2020/CH6
-
-//The directory containing a CMake configuration file for ceres.
-ceres_DIR:PATH=ceres_DIR-NOTFOUND
+ch7VO_SOURCE_DIR:STATIC=/home/studyhooligen/slam2020/CH7
 
 
 ########################
@@ -284,7 +281,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/studyhooligen/slam2020/CH6
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/studyhooligen/slam2020/CH7
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
